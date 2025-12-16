@@ -56,7 +56,7 @@ rm -rf binutils-build
 mkdir binutils-build
 cd binutils-build
 ../binutils/configure --prefix="${PREFIXDIR}" --target="${TARGET}" --with-pkgversion="salman-javed-nz" \
-    --disable-multilib --disable-werror --enable-lto --enable-plugins \
+    --disable-multilib --disable-werror --enable-lto --disable-readline --enable-plugins \
     --with-zlib=yes --disable-nls --disable-unit-tests --disable-shared
 make $J
 make install
